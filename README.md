@@ -4,6 +4,11 @@
 
 Spring Framework 기반의 사용자 관리 웹 애플리케이션입니다.
 
+<div style="display: flex; justify-content: space-around; align-items: flex-start;">
+  <img src="/screenshots/screenshot11.png" style="width: 48%;"/>
+  <img src="/screenshots/screenshot22.png" style="width: 48%;"/>
+</div>
+
 ## 주요 기능
 
 ### 1. 사용자 관리
