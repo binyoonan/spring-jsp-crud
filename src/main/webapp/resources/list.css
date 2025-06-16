@@ -1,0 +1,130 @@
+/* userlist.css - 사용자 목록 페이지 스타일 */
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #212529;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.userlist-container {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 3rem 4rem;
+    max-width: 900px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    padding: 1rem;
+    border-bottom: 2px solid #e9ecef;
+    color: #495057;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e9ecef;
+}
+
+tbody td {
+    padding: 1rem;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-home {
+    background-color: #fff;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    box-sizing: border-box;
+    min-width: 180px;
+    text-align: center;
+}
+
+.btn-home:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+    .userlist-container {
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .button-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-home {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+tbody td a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+}
+tbody td a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #495057;
+}
+.user-stats strong {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
